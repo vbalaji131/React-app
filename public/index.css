@@ -1,0 +1,191 @@
+.chat-container {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+.chat-container h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-list-header {
+  display: flex;
+  border: 2px solid #9e9797;
+  min-height: 50px;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+/* chat card styling */
+.chat {
+  display: flex;
+  border: 2px solid black;
+  margin: 10px;
+  height: 80vh;
+}
+
+.chat-list {
+  height: 80vh;
+  overflow-x: hidden;
+  width: 300px;
+}
+
+.chat-card {
+  display: flex;
+  border: 2px solid red;
+  height: 60px;
+  padding: 2px 10px 2px 5px;
+}
+.dp-img {
+  width: 55px;
+  height: 55px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.chat-detail {
+  width: 100%;
+  padding: 5px;
+}
+.chat-utility {
+  width: 50px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* second column of the chat app */
+.second-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* chat header */
+
+.chat-msg-header {
+  display: flex;
+  border: 2px solid #9e9797;
+  min-height: 50px;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.chat-msg {
+  overflow-x: hidden;
+  padding: 10px;
+  max-height: 100%;
+  /* flex: 0 0 ; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* chat single message design */
+.chat-msg .right {
+  margin: 2px;
+  display: flex;
+  justify-content: end;
+}
+.chat-msg .left {
+  display: flex;
+  margin: 2px;
+  justify-content: start;
+}
+.message {
+  display: flex;
+  color: white;
+  background-color: rgb(90, 80, 240);
+  border-radius: 20px;
+  max-width: 400px;
+}
+.message-text {
+  padding: 5px 10px 8px 15px;
+}
+.message-time {
+  font-size: small;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 15px;
+  padding-bottom: 2px;
+}
+
+/* typing bar design */
+
+.typing-bar {
+  display: flex;
+  border: 2px solid #9e9797;
+  border-radius: 20px;
+  height: 40px;
+  align-items: center;
+  margin: 10px;
+  padding: 2px 10px;
+}
+
+.tb-emoji,
+.tb-picture {
+  font-size: 25px;
+  padding: 4px 5px 7px 5px;
+}
+
+.typing-area {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* weather application */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-div {
+  z-index: -1;
+  position: absolute;
+  padding-top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+}

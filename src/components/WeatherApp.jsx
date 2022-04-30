@@ -68,7 +68,7 @@ const WeatherApp = () => {
         />
       </div>
       <button className="btn btn-warning" onClick={displayAppi}>
-        Get Temparature
+        Get Temp
       </button>
       {response() ? (
         <div
